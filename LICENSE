@@ -1,0 +1,58 @@
+
+---
+
+## 🎨 2. Frontend README (`jobflow-frontend/README.md`)
+
+Create: `E:/jobflow-frontend/README.md` and paste:
+
+```md
+# JobFlow Frontend 🎨
+
+This is the **React frontend** for the JobFlow job application tracker.
+
+Built with:
+
+- React (Vite)
+- React Router
+- Custom CSS (glassmorphism + animated background)
+- Fetch API to call the Node.js backend
+
+---
+
+## 🚀 Features
+
+- Beautiful animated login page (liquid / wave background, glass UI)
+- Login & JWT token storage in `localStorage`
+- Protected dashboard route
+- Fetches job applications from backend
+- Ready to extend with:
+  - Register page
+  - Add / Edit job forms
+  - Job filters & stats
+
+---
+
+## 🛠 Tech Stack
+
+- **React** (Vite)
+- **React Router DOM**
+- **Plain CSS** for custom UI
+- **Fetch API** to call backend
+
+---
+
+## 📁 Project Structure
+
+```bash
+jobflow-frontend/
+├─ src/
+│  ├─ api.js             # API helper functions (login, register, jobs)
+│  ├─ App.jsx            # Routes config
+│  ├─ main.jsx           # React root (wrapped in BrowserRouter)
+│  ├─ pages/
+│  │   ├─ Login.jsx      # Animated login UI
+│  │   ├─ login.css      # Styles for login
+│  │   ├─ Register.jsx   # (to be designed similar to login)
+│  │   ├─ Dashboard.jsx  # Job list / dashboard
+│  │   └─ AddJob.jsx     # Form to add jobs (WIP / configurable)
+└─ vite.config.js
